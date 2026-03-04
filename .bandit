@@ -1,6 +1,0 @@
-[bandit]
-exclude: tests,docs,venv,.venv,.git,.circleci,.github
-targets: .
-recursive: true
-severity: high
-confidence: high

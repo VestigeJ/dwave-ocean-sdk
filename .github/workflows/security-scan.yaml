@@ -23,7 +23,7 @@ jobs:
         pip install .
 
     - name: Run Bandit Scan
-      run: bandit -c .bandit
+      run: bandit -r . -c bandit.yaml -ll -ii
 
     - name: Run Ruff Security Lint
       run: ruff check --select S .
