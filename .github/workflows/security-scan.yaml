@@ -26,7 +26,7 @@ jobs:
       run: bandit -r . -c bandit.yaml -ll -ii
 
     - name: Run Ruff Security Lint
-      run: ruff check --select S .
+      run: ruff check .
 
     - name: Run pip-audit
       run: pip-audit
